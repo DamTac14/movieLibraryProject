@@ -28,8 +28,8 @@ Le fichier de configuration Jest (`jest.config.cjs`) est divisé en deux section
 
 - **Pour exécuter les tests des composants React :**
     ```bash
-    npm run test:components```
+    npm run test:components
 
 - **Pour exécuter les tests des composants Node :**
     ```bash
-    npm run test:node```
+    npm run test:node

@@ -1,6 +1,7 @@
 import { getMovies, getMovieById, addMovie, updateMovie } from './index'; 
 import { expect, test } from '@jest/globals';
-test('should fetch movies correctly', async () => {
+
+test('fetch des films effectué correctement', async () => {
   const movies = await getMovies();
   
   expect(movies.length).toBeGreaterThanOrEqual(3);
@@ -28,7 +29,7 @@ test('should fetch movies correctly', async () => {
   );
 });
 
-test('should fetch movie by ID correctly', async () => {
+test('film trouvé correctement', async () => {
   const movie = await getMovieById("1");
 
   expect(movie).toEqual({
@@ -42,7 +43,7 @@ test('should fetch movie by ID correctly', async () => {
   });
 });
 
-test('should add a movie correctly', async () => {
+test('film ajouté correctement', async () => {
   const newMovie = {
     title: "Dune",
     director: "Denis Villeneuve",
@@ -59,7 +60,7 @@ test('should add a movie correctly', async () => {
   expect(fetchedMovie).toMatchObject(newMovie);
 });
 
-test('should update a movie correctly', async () => {
+test('update effectué correctement', async () => {
   const updatedMovie = {
     title: "Inception (Updated)",
     director: "Christopher Nolan",
