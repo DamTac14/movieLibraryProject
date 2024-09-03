@@ -1,0 +1,157 @@
+{
+  "movies": [
+    {
+      "title": "Inception (Updated)",
+      "director": "Christopher Nolan",
+      "year": "2010",
+      "genre": "Science-Fiction",
+      "summary": "Dom Cobb est un voleur dans l'art de l'extraction.",
+      "posterUrl": "https://example.com/inception-updated.jpg",
+      "id": "1"
+    },
+    {
+      "id": "3",
+      "title": "The Dark Knight",
+      "director": "Christopher Nolan",
+      "year": "2008",
+      "genre": "Action",
+      "summary": "Batman aborde une phase décisive de sa guerre contre le crime. Avec l'aide du lieutenant de police Jim Gordon et du procureur Harvey Dent, Batman s'efforce de démanteler les organisations criminelles qui pullulent à Gotham City.",
+      "posterUrl": "https://fr.web.img3.acsta.net/medias/nmedia/18/65/66/55/19033354.jpg"
+    },
+    {
+      "id": "4",
+      "title": "The Matrix",
+      "director": "Les Wachowskis",
+      "year": "1999",
+      "genre": "Science-Fiction",
+      "summary": "Neo, un jeune hacker, découvre que le monde dans lequel il vit n'est qu'une illusion. Il rejoint un groupe de résistants pour se libérer de la Matrice, une réalité virtuelle contrôlée par des machines intelligentes.",
+      "posterUrl": "https://fr.web.img6.acsta.net/medias/04/33/19/043319_af.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Interstellar",
+      "director": "Christopher Nolan",
+      "year": "2014",
+      "genre": "Science-Fiction",
+      "summary": "Dans un futur proche, la Terre est devenue hostile à la vie humaine. Un groupe d'astronautes entreprend une mission à travers un trou de ver pour trouver un nouveau foyer à l'humanité.",
+      "posterUrl": "https://fr.web.img6.acsta.net/medias/nmedia/18/90/32/60/20428156.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Pulp Fiction",
+      "director": "Quentin Tarantino",
+      "year": "1994",
+      "genre": "Crime",
+      "summary": "L'odyssée sanglante et burlesque de petits malfrats à Los Angeles. Jules et Vincent, deux tueurs à gages au service d'un puissant truand, suivent les ordres de leur patron entre règlements de comptes, trahisons, et tentatives de redressement.",
+      "posterUrl": "https://fr.web.img6.acsta.net/medias/nmedia/18/36/04/37/18846278.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Dune",
+      "director": "Denis Villeneuve",
+      "year": "2021",
+      "genre": "Science-Fiction",
+      "summary": "L'histoire épique de Paul Atreides, héritier d'une noble famille, qui se retrouve au cœur d'un conflit sur la planète désertique Arrakis.",
+      "posterUrl": "https://example.com/dune.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Dune",
+      "director": "Denis Villeneuve",
+      "year": "2021",
+      "genre": "Science-Fiction",
+      "summary": "L'histoire épique de Paul Atreides, héritier d'une noble famille, qui se retrouve au cœur d'un conflit sur la planète désertique Arrakis.",
+      "posterUrl": "https://example.com/dune.jpg"
+    },
+    {
+      "id": "cf81",
+      "title": "Dune",
+      "director": "Denis Villeneuve",
+      "year": "2021",
+      "genre": "Science-Fiction",
+      "summary": "L'histoire épique de Paul Atreides, héritier d'une noble famille, qui se retrouve au cœur d'un conflit sur la planète désertique Arrakis.",
+      "posterUrl": "https://example.com/dune.jpg"
+    },
+    {
+      "id": "17f9",
+      "title": "",
+      "director": "Unknown",
+      "year": "2024",
+      "genre": "Unknown",
+      "summary": "This should fail.",
+      "posterUrl": "https://example.com/invalid.jpg"
+    },
+    {
+      "id": "fea4",
+      "title": "Dune",
+      "director": "Denis Villeneuve",
+      "year": "2021",
+      "genre": "Science-Fiction",
+      "summary": "L'histoire épique de Paul Atreides, héritier d'une noble famille, qui se retrouve au cœur d'un conflit sur la planète désertique Arrakis.",
+      "posterUrl": "https://example.com/dune.jpg"
+    },
+    {
+      "id": "d9f7",
+      "title": "",
+      "director": "Unknown",
+      "year": "2024",
+      "genre": "Unknown",
+      "summary": "This should fail.",
+      "posterUrl": "https://example.com/invalid.jpg"
+    },
+    {
+      "id": "1283",
+      "title": "Dune",
+      "director": "Denis Villeneuve",
+      "year": "2021",
+      "genre": "Science-Fiction",
+      "summary": "L'histoire épique de Paul Atreides, héritier d'une noble famille, qui se retrouve au cœur d'un conflit sur la planète désertique Arrakis.",
+      "posterUrl": "https://example.com/dune.jpg"
+    },
+    {
+      "id": "0d93",
+      "title": "",
+      "director": "Unknown",
+      "year": "2024",
+      "genre": "Unknown",
+      "summary": "This should fail.",
+      "posterUrl": "https://example.com/invalid.jpg"
+    },
+    {
+      "id": "3672",
+      "title": "Dune",
+      "director": "Denis Villeneuve",
+      "year": "2021",
+      "genre": "Science-Fiction",
+      "summary": "L'histoire épique de Paul Atreides, héritier d'une noble famille, qui se retrouve au cœur d'un conflit sur la planète désertique Arrakis.",
+      "posterUrl": "https://example.com/dune.jpg"
+    },
+    {
+      "id": "a7d7",
+      "title": "Dune",
+      "director": "Denis Villeneuve",
+      "year": "2021",
+      "genre": "Science-Fiction",
+      "summary": "L'histoire épique de Paul Atreides, héritier d'une noble famille, qui se retrouve au cœur d'un conflit sur la planète désertique Arrakis.",
+      "posterUrl": "https://example.com/dune.jpg"
+    },
+    {
+      "id": "327f",
+      "title": "Dune",
+      "director": "Denis Villeneuve",
+      "year": "2021",
+      "genre": "Science-Fiction",
+      "summary": "L'histoire épique de Paul Atreides, héritier d'une noble famille, qui se retrouve au cœur d'un conflit sur la planète désertique Arrakis.",
+      "posterUrl": "https://example.com/dune.jpg"
+    },
+    {
+      "id": "ce78",
+      "title": "Dune",
+      "director": "Denis Villeneuve",
+      "year": "2021",
+      "genre": "Science-Fiction",
+      "summary": "L'histoire épique de Paul Atreides, héritier d'une noble famille, qui se retrouve au cœur d'un conflit sur la planète désertique Arrakis.",
+      "posterUrl": "https://example.com/dune.jpg"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+nav {
+  background-color: #141f35;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid transparent; 
+  border-image: linear-gradient(to right, transparent, #61dafb, transparent) 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #61dafb;
+}
