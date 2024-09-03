@@ -1,8 +1,6 @@
-# React + Vite
+# Movie Library Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Ce projet est une bibliothèque de films construite avec React et Vite. Il utilise une fausse base de données pour les données de test et inclut des tests pour les composants et les API. Le projet utilise du CSS natif pour le style.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
