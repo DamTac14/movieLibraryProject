@@ -1,8 +1,31 @@
 module.exports = {
-    transform: {
-      '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
+  projects: [
+    {
+      displayName: 'react-tests',
+      testEnvironment: 'jsdom',
+      transform: {
+        '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
+      },
+      moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
+      moduleNameMapper: {
+        '\\.(css|less|scss|sass)$': 'identity-obj-proxy'
+      },
+      testMatch: ['<rootDir>/src/components/**/*.test.js']
     },
-    moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
-    testEnvironment: 'node',
-  };
-  
+    {
+      displayName: 'node-tests',
+      testEnvironment: 'node',
+      transform: {
+        '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
+      },
+      moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
+      transformIgnorePatterns: [
+        "node_modules/(?!(your-package-name)/)"
+      ],
+      moduleNameMapper: {
+        '\\.(css|less|scss|sass)$': 'identity-obj-proxy'
+      },
+      testMatch: ['<rootDir>/src/api/**/*.test.js']
+    }
+  ]
+};

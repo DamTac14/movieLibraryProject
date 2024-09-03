@@ -161,6 +161,24 @@
       "genre": "Science-Fiction",
       "summary": "L'histoire épique de Paul Atreides, héritier d'une noble famille, qui se retrouve au cœur d'un conflit sur la planète désertique Arrakis.",
       "posterUrl": "https://example.com/dune.jpg"
+    },
+    {
+      "id": "1486",
+      "title": "Dune",
+      "director": "Denis Villeneuve",
+      "year": "2021",
+      "genre": "Science-Fiction",
+      "summary": "L'histoire épique de Paul Atreides, héritier d'une noble famille, qui se retrouve au cœur d'un conflit sur la planète désertique Arrakis.",
+      "posterUrl": "https://example.com/dune.jpg"
+    },
+    {
+      "id": "ff0b",
+      "title": "Dune",
+      "director": "Denis Villeneuve",
+      "year": "2021",
+      "genre": "Science-Fiction",
+      "summary": "L'histoire épique de Paul Atreides, héritier d'une noble famille, qui se retrouve au cœur d'un conflit sur la planète désertique Arrakis.",
+      "posterUrl": "https://example.com/dune.jpg"
     }
   ]
 }
