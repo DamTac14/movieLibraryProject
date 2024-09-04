@@ -1,16 +1,19 @@
 import { useEffect, useState } from 'react';
 import { getMovies } from '../api';
 import { Link } from 'react-router-dom';
+import SearchBar from './SearchBar'; // Assure-toi d'importer le composant
 import '../styles/MovieList.css';
 
 const MovieList = () => {
   const [movies, setMovies] = useState([]);
+  const [filteredMovies, setFilteredMovies] = useState([]); // État pour les films filtrés
   const [error, setError] = useState(null);
 
   const fetchMovies = async () => {
     try {
       const data = await getMovies();
       setMovies(data);
+      setFilteredMovies(data); // Initialement, les films filtrés sont tous les films
       setError(null); 
     } catch (error) {
       console.error('Error fetching movies:', error);
@@ -21,6 +24,10 @@ const MovieList = () => {
   useEffect(() => {
     fetchMovies();
   }, []);
+
+  const handleSearch = (filteredMovies) => {
+    setFilteredMovies(filteredMovies);
+  };
 
   if (error) {
     return (
@@ -36,19 +43,20 @@ const MovieList = () => {
 
   return (
     <>
+    <SearchBar movies={movies} onSearch={handleSearch} />
     <div className="movie-list">
-      {movies.map((movie) => (
-        <div key={movie.id} className="movie-card">
-          <Link to={`/movies/${movie.id}`}>
-            <div className="movie-info">
-              <img src={movie.posterUrl} alt={movie.title} className="movie-poster" />
-                  <h2 className="movie-title">{movie.title}</h2>
-                  <p className="movie-release-date">Date de sortie: {movie.year}</p>
-            </div>
-          </Link>
-        </div>
-      ))}
-    </div>
+        {filteredMovies.map((movie) => (
+          <div key={movie._id} className="movie-card">
+            <Link to={`/movies/${movie._id}`}>
+              <div className="movie-info">
+                <img src={movie.posterUrl} alt={movie.title} className="movie-poster" />
+                <h2 className="movie-title">{movie.title}</h2>
+                <p className="movie-release-date">Date de sortie: {movie.year}</p>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
     </>
   );
 };

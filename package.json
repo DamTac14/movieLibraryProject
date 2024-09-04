@@ -1,9 +1,9 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "movie-library-project",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "start": "node src/server.js",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -14,20 +14,28 @@
     "test": "jest"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
     "express": "^4.19.2",
-    "mongoose": "^8.6.0",
+    "express-static-gzip": "^2.1.7",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.1",
+    "morgan": "^1.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-react-jsx": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
     "@babel/preset-react": "^7.24.7",
     "@eslint/js": "^9.9.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.3",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -42,7 +50,10 @@
     "jest-css-modules": "^2.1.0",
     "jest-environment-jsdom": "^29.7.0",
     "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.4",
     "vite": "^5.4.1",
     "vitest": "^2.0.5"
-  }
+  },
+  "license": "ISC",
+  "description": ""
 }

@@ -1,4 +1,4 @@
-// import React from 'react'; 
+// import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import { expect, test, jest } from '@jest/globals';
 import MovieList from './MovieList';
@@ -40,11 +40,10 @@ test('renders a list of movies', async () => {
 
   render(<MovieList />);
 
-  await waitFor(() => {
-    expect(screen.getByText('Inception (Updated)')).toBeInTheDocument();
-    expect(screen.getByText('The Dark Knight')).toBeInTheDocument();
-    expect(screen.getByText('The Matrix')).toBeInTheDocument();
-    expect(screen.getByText('Interstellar')).toBeInTheDocument();
-    expect(screen.queryByText('Dune')).not.toBeInTheDocument(); 
-  });
+  await waitFor(() => expect(screen.getByText('Inception (Updated)')).toBeInTheDocument());
+
+  expect(screen.getByText('The Dark Knight')).toBeInTheDocument();
+  expect(screen.getByText('The Matrix')).toBeInTheDocument();
+  expect(screen.getByText('Interstellar')).toBeInTheDocument();
+  expect(screen.queryByText('Dune')).not.toBeInTheDocument();
 });

@@ -1,17 +1,12 @@
-// // src/config/db.js
-// const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-// const connectDB = async () => {
-//   try {
-//     await mongoose.connect('mongodb://localhost:27017/your-database-name', {
-//       useNewUrlParser: true,
-//       useUnifiedTopology: true,
-//     });
-//     console.log('MongoDB connected successfully');
-//   } catch (err) {
-//     console.error('MongoDB connection error:', err);
-//     process.exit(1);
-//   }
-// };
+const connectDB = async () => {
+  try {
+    await mongoose.connect('mongodb+srv://tacitedamien444:06P47aCZ81*@movieproject.mddhl.mongodb.net/MoviesProject?retryWrites=true&w=majority');
+    console.log('MongoDB connected successfully');
+  } catch (err) {
+    console.error('MongoDB connection error:', err);
+  }
+};
 
-// module.exports = connectDB;
+export default connectDB;
