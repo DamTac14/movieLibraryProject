@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
 
-dotenv.config({ path: '.env.local' });
+dotenv.config({ path: '.env.local' } /* path à supprimer si vous utilisez le .env et pas .env.local */);
 
 const connectDB = async () => {
   try {
