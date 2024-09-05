@@ -1,19 +1,19 @@
 import { useEffect, useState } from 'react';
 import { getMovies } from '../api';
 import { Link } from 'react-router-dom';
-import SearchBar from './SearchBar'; // Assure-toi d'importer le composant
+import SearchBar from './SearchBar'; 
 import '../styles/MovieList.css';
 
 const MovieList = () => {
   const [movies, setMovies] = useState([]);
-  const [filteredMovies, setFilteredMovies] = useState([]); // État pour les films filtrés
+  const [filteredMovies, setFilteredMovies] = useState([]);
   const [error, setError] = useState(null);
 
   const fetchMovies = async () => {
     try {
       const data = await getMovies();
       setMovies(data);
-      setFilteredMovies(data); // Initialement, les films filtrés sont tous les films
+      setFilteredMovies(data);
       setError(null); 
     } catch (error) {
       console.error('Error fetching movies:', error);

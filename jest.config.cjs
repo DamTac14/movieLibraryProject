@@ -4,9 +4,9 @@ module.exports = {
       displayName: 'react-tests',
       testEnvironment: 'jsdom',
       transform: {
-        '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
+        '^.+\\.(js|jsx|ts|tsx|cjs)$': 'babel-jest',
       },
-      moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
+      moduleFileExtensions: ['js', 'cjs', 'jsx', 'ts', 'tsx'],
       moduleNameMapper: {
         '\\.(css|less|scss|sass)$': 'identity-obj-proxy'
       },

@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const movie = await Movie.findById(req.params.id);
-    if (!movie) return res.status(404).json({ message: 'Movie not found' });
+    if (!movie) return res.status(404).json({ message: 'Le film n\'a pas été trouvé' });
     res.json(movie);
   } catch (err) {
     res.status(500).json({ message: err.message });
@@ -51,7 +51,7 @@ router.post('/', async (req, res) => {
 router.put('/:id', async (req, res) => {
   try {
     const updatedMovie = await Movie.findByIdAndUpdate(req.params.id, req.body, { new: true });
-    if (!updatedMovie) return res.status(404).json({ message: 'Movie not found' });
+    if (!updatedMovie) return res.status(404).json({ message: 'Le film n\'a pas été trouvé' });
     res.json(updatedMovie);
   } catch (err) {
     res.status(400).json({ message: err.message });
@@ -64,8 +64,8 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
   try {
     const deletedMovie = await Movie.findByIdAndDelete(req.params.id);
-    if (!deletedMovie) return res.status(404).json({ message: 'Movie not found' });
-    res.json({ message: 'Movie deleted' });
+    if (!deletedMovie) return res.status(404).json({ message: 'Le film n\'a pas été trouvé' });
+    res.json({ message: 'Film supprimé' });
   } catch (err) {
     res.status(500).json({ message: err.message });
   }

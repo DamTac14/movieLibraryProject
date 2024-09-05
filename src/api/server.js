@@ -1,7 +1,7 @@
 import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
-import connectDB from './config/db.js';
+import connectDB from './config/db.cjs';
 import movieRoutes from './apiRoutes/movieRoutes.js';
 import morgan from 'morgan';
 
