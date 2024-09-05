@@ -30,6 +30,7 @@ describe('MovieDetails Component', () => {
     expect(fetch).toHaveBeenCalledWith('http://localhost:3000/api/movies/1');
 
     await waitFor(() => {
+      expect(screen.queryByText(/The Matrix/i)).not.toBeInTheDocument();
       expect(screen.getByText(/Inception/i)).toBeInTheDocument();
       expect(screen.getByText(/2010/i)).toBeInTheDocument();
       expect(screen.getByAltText(/Inception/i)).toBeInTheDocument();

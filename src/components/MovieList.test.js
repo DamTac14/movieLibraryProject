@@ -42,6 +42,12 @@ describe('Movie List Component', () => {
     fetch.mockClear();
   });
 
+
+
+
+
+
+
   it('should call the API with GET method', async () => {
     render(
       <MemoryRouter>
@@ -50,6 +56,13 @@ describe('Movie List Component', () => {
     );
     expect(fetch).toHaveBeenCalledWith('http://localhost:3000/api/movies');
   });
+
+
+
+
+
+
+
 
   it('should present Inception movie', async () => {
     render(
@@ -63,6 +76,14 @@ describe('Movie List Component', () => {
     });
   });
 
+
+
+
+
+
+
+
+
   it('Should have a functioning search bar', async () => {
     render(
       <MemoryRouter>
@@ -73,10 +94,18 @@ describe('Movie List Component', () => {
     await waitFor(() => {
       expect(screen.getByText(/Inception/i)).toBeInTheDocument();
     });
+
     fireEvent.change(screen.getByPlaceholderText('Rechercher un film...'), { target: { value: 'The Matrix' } });
+    
     await waitFor(() => {
       expect(screen.queryByText(/Matrix/i)).toBeInTheDocument();
       expect(screen.queryByText(/Inception/i)).not.toBeInTheDocument();
     });
   });
+
+
+
+
+
+
 });
