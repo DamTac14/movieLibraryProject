@@ -4,6 +4,8 @@
 
 Ce projet est une bibliothèque de films construite avec React et Vite. Il utilise une fausse base de données pour les données de test et inclut des tests pour les composants et les API. Le projet utilise du CSS natif pour le style.
 
+**Documentation swagger : http://localhost:3000/api-docs/**
+
 ## Tests
 
 Le projet utilise Jest pour exécuter des tests sur les composants React ainsi que sur les fichiers Node.js. La configuration de Jest est définie dans un fichier unique `jest.config.cjs` qui gère les deux types de tests.
