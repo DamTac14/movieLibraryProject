@@ -43,7 +43,6 @@ Le fichier de configuration Jest (`jest.config.cjs`) est divisé en deux section
 
 - **Pour exécuter le back :**
     ```bash
-    cd movie-library-project
     cd src
     cd api
     node server.js
