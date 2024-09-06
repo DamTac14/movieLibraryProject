@@ -5,6 +5,29 @@ import cors from 'cors';
 import connectDB from './config/db.cjs';
 import movieRoutes from './apiRoutes/movieRoutes.js';
 import morgan from 'morgan';
+import swaggerJsDoc from 'swagger-jsdoc';
+import swaggerUi from 'swagger-ui-express';
+
+
+const swaggerOptions = {
+  swaggerDefinition: {
+    openapi: '3.0.0',
+    info: {
+      title: 'API des Films',
+      version: '1.0.0',
+      description: 'API pour gérer une liste de films',
+    },
+    servers: [
+      {
+        url: 'http://localhost:3000/api/movies',
+      },
+    ],
+  },
+  apis: ['./apiRoutes/*.js'],
+};
+
+const swaggerDocs = swaggerJsDoc(swaggerOptions);
+
 
 dotenv.config();
 
@@ -18,6 +41,8 @@ const PORT = 3000;
     console.error('Erreur de connexion à la base de données:', error);
   }
 })();
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use(helmet());
 app.use(cors());
