@@ -1,14 +1,15 @@
 import express from 'express';
+import dotenv from 'dotenv';
 import helmet from 'helmet';
 import cors from 'cors';
 import connectDB from './config/db.cjs';
 import movieRoutes from './apiRoutes/movieRoutes.js';
 import morgan from 'morgan';
 
+dotenv.config();
 
 const app = express();
 const PORT = 3000;
-
 (async () => {
   try {
     await connectDB();

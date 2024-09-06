@@ -33,3 +33,22 @@ Le fichier de configuration Jest (`jest.config.cjs`) est divisé en deux section
 - **Pour exécuter les tests des composants Node :**
     ```bash
     npm run test:node
+
+
+### Clé MongoDB
+
+- **Le fichier .env.local comportant la clé de connexion à MongoDB se trouve dans le dossier api**
+
+### Commandes pour lancer le site 
+
+- **Pour exécuter le back :**
+    ```bash
+    cd movie-library-project
+    cd src
+    cd api
+    node server.js
+
+- **Pour exécuter le front :**
+    ```bash
+    cd movie-library-project
+    npm run dev
