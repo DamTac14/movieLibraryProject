@@ -19,7 +19,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'http://localhost:3000/api/movies',
+        url: 'http://damien.livecampus.arcplex.dev/api/movies',
       },
     ],
   },
