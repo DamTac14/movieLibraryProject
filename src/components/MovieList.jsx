@@ -50,7 +50,7 @@ const MovieList = () => {
             <Link to={`/movies/${movie._id}`}>
               <div className="movie-info">
                 <img src={movie.posterUrl} alt={movie.title} className="movie-poster" />
-                <h2 className="movie-title">{movie.title}</h2>
+                <h2 className="movie-title">{movie.title} TAPER QUELQUE CHOSE</h2>
                 <p className="movie-release-date">Date de sortie: {movie.year}</p>
               </div>
             </Link>

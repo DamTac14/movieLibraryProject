@@ -1,4 +1,3 @@
-// src/routes/AppRoutes.jsx
 import { Route, Routes } from 'react-router-dom';
 import MovieList from '../components/MovieList';
 import MovieDetail from '../components/MovieDetails';  
